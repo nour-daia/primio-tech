@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Primio Tech — A digital solutions team building modern web applications."
+    />
+    <script>
+      (function () {
+        var theme = localStorage.getItem("primio-theme") || "dark";
+        var locale = localStorage.getItem("primio-locale") || "en";
+        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.setAttribute("lang", locale);
+        document.documentElement.setAttribute("dir", locale === "ar" ? "rtl" : "ltr");
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Primio Tech | Web Development & Design</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-navy: #0a0e1a;
+        --color-electric: #2563eb;
+        --color-purple: #7c3aed;
+        --color-cyan: #00d4ff;
+        --color-slate: #1e293b;
+        --color-blue-black: #111827;
+        --color-soft-white: #f8fafc;
+        --color-surface: #111827;
+        --color-border: rgba(255, 255, 255, 0.1);
+
+        --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+        --font-arabic: "Cairo", "Inter", ui-sans-serif, system-ui, sans-serif;
+      }
+
+      [data-theme="light"] {
+        --color-navy: #f8fafc;
+        --color-slate: #e2e8f0;
+        --color-blue-black: #f1f5f9;
+        --color-soft-white: #0f172a;
+        --color-surface: #ffffff;
+        --color-border: rgba(15, 23, 42, 0.12);
+      }
+
+      html[dir="rtl"] {
+        --font-sans: var(--font-arabic);
+      }
+    </style>
+  </head>
+  <body class="theme-dark bg-navy font-sans text-soft-white antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
