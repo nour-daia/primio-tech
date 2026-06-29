@@ -12,6 +12,7 @@ export default {
     about: "About",
     services: "Services",
     portfolio: "Portfolio",
+    news: "Latest News",
     team: "Team",
     contact: "Contact",
     getInTouch: "Get in Touch",
@@ -52,6 +53,7 @@ export default {
     headingHighlight: "one project at a time",
     body: "From landing pages to full-stack applications, we combine technical expertise with thoughtful design. Our team works closely with clients to deliver solutions that scale and stand out.",
     imageAlt: "About Primio Tech team",
+    followUs: "Follow us",
     highlights: [
       "Modern React & Next.js stack",
       "Mobile-first responsive design",
@@ -88,6 +90,11 @@ export default {
         title: "Quality Assurance",
         description:
           "We test thoroughly to ensure your products are reliable, bug-free, and ready for real-world use.",
+      },
+      n8n: {
+        title: "n8n Automation",
+        description:
+          "We design and build smart workflows with n8n to connect your apps, automate tasks, and streamline business operations.",
       },
       training: {
         title: "Training & Workshops",
@@ -131,49 +138,85 @@ export default {
     title: "Meet Our Team",
     description:
       "Talented people behind every project — passionate experts ready to bring your ideas to life.",
-    members: {
-      abdulrahman: {
-        name: "Abdulrahman Al-Shawa",
-        role: "Full-Stack Developer",
-        bio: "Builds scalable web applications using React.js and Next.js with clean architecture and performance focus.",
-      },
-      "mohammed-abu-zour": {
-        name: "Mohammed Abu Zour",
-        role: "API Integration Engineer",
-        bio: "Specializes in connecting frontend systems with REST APIs and third-party services for seamless data flow.",
-      },
-      khaled: {
-        name: "Khaled Abu Aasi",
-        role: "WordPress Developer",
-        bio: "Creates and customizes WordPress websites, themes, and plugins tailored for business needs.",
-      },
-      safaa: {
-        name: "Safaa Saad",
-        role: "SEO Specialist",
-        bio: "Improves search visibility through on-page, off-page, and technical SEO strategies tailored to business goals.",
-      },
-      "mohammed-abu-awda": {
-        name: "Mohammed Abu Awda",
-        role: "Digital Marketing Specialist",
-        bio: "Drives brand growth through PPC campaigns, social media marketing, and conversion-focused strategies.",
-      },
-      "nour-aboudia": {
-        name: "Nour Aboudia",
-        role: "Web Developer",
-        bio: "Develops modern websites and web applications with a focus on quality and user experience.",
-      },
-    },
+   members: {
+  abdulrahman: {
+    name: "Abdulrahman Al-Shawa",
+    role: "Team Leader & Data Analyst",
+    bio: "Leads the team and analyzes data to support decision-making and improve system performance through insights and reporting.",
+  },
+
+  "mohammed-abu-awda": {
+    name: "Mohammed Abu Awda",
+    role: "Quality Assurance & LinkedIn Management",
+    bio: "Ensures software quality through testing and validation processes, and manages LinkedIn presence and professional outreach.",
+  },
+
+  "mohammed-abu-zour": {
+    name: "Mohammed Abu Zour",
+    role: "Backend Developer & Technical Lead",
+    bio: "Develops and maintains backend systems, builds APIs, and leads technical implementation to ensure scalable and efficient architecture.",
+  },
+
+  "nour-aboudia": {
+  name: "Nour Aboudia",
+  role: "Frontend Developer & Automation Specialist & WordPress Developer & SEO",
+  bio: "Develops modern frontend interfaces, builds and customizes WordPress websites, improves SEO performance, and automates workflows using n8n to deliver fast and efficient digital solutions.",
+},
+  khaled: {
+    name: "Khaled Abu Aasi",
+    role: "Backend Developer",
+    bio: "Develops backend systems and builds databases and APIs to ensure robust and stable application performance.",
+  },
+
+  safaa: {
+    name: "Safaa Saad",
+    role: "UI/UX Designer & Branding Specialist",
+    bio: "Designs user interfaces and experiences with a strong focus on branding, visual identity, and user-centered design.",
+  },
+},
   },
   contact: {
     title: "Let's Work Together",
     description:
       "Have a project in mind? Reach out and we'll get back to you as soon as possible.",
+    emailLabel: "Official Email",
+    whatsappLabel: "WhatsApp",
     name: "Name",
     namePlaceholder: "Your name",
     email: "Email",
-    emailPlaceholder: "you@example.com",
+    emailPlaceholder: "your@email.com",
     message: "Message",
     messagePlaceholder: "Tell us about your project...",
     send: "Send Message",
+    whatsappCta: "Chat on WhatsApp",
+  },
+  news: {
+    title: "Latest News",
+    description:
+      "Stay updated with our latest workshops, launches, and team activities.",
+    readMore: "Read More",
+    items: {
+      "workshop-2026": {
+        title: "Web Development Workshop 2026",
+        excerpt:
+          "A hands-on training session covering modern React, responsive design, and best practices for building production-ready apps.",
+        date: "Mar 15, 2026",
+        location: "Ramallah",
+      },
+      "new-brand": {
+        title: "Primio Tech Brand Refresh",
+        excerpt:
+          "We unveiled our updated visual identity — a cleaner look that reflects our growth in design, development, and digital marketing.",
+        date: "Feb 2, 2026",
+        location: "Online",
+      },
+      "web-summit": {
+        title: "Team at the Regional Web Summit",
+        excerpt:
+          "Our team joined industry leaders to share insights on UI/UX, quality assurance, and building scalable digital products.",
+        date: "Jan 20, 2026",
+        location: "Amman",
+      },
+    },
   },
 };

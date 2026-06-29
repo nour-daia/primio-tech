@@ -8,8 +8,8 @@ export default function Portfolio() {
   const { t } = useLocale();
 
   return (
-    <section id="portfolio" className="section-glow relative py-20 md:py-28">
-      <div className="mx-auto max-w-6xl px-5 md:px-8">
+    <section id="portfolio" className="section-glow relative overflow-x-hidden py-16 md:py-28">
+      <div className="section-container">
         <SectionTitle
           title={t.portfolio.title}
           description={t.portfolio.description}

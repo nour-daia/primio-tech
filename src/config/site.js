@@ -6,9 +6,13 @@ export function buildWhatsAppUrl(message) {
 
 export const SITE = {
   name: "Primio Tech",
-  email: "nour@gmail.com",
+  email: "primio@outlook.sa",
   whatsapp: {
-    number: "900000000000000000",
+    number: "972592018231",
+  },
+  social: {
+    instagram: "https://instagram.com/primio.tech",
+    linkedin: "https://linkedin.com/company/primio-tech",
   },
 };
 
@@ -17,6 +21,7 @@ export const NAV_LINKS = [
   { key: "about", href: "#about" },
   { key: "services", href: "#services" },
   { key: "portfolio", href: "#portfolio" },
+  { key: "news", href: "#news" },
   { key: "team", href: "#team" },
   { key: "contact", href: "#contact" },
 ];

@@ -1,15 +1,18 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { FaWhatsapp } from "react-icons/fa6";
 import { FiMenu, FiX } from "react-icons/fi";
 import Logo from "./ui/Logo";
 import SettingsDropdown from "./ui/SettingsDropdown";
-import { NAV_LINKS } from "../config/site";
+import { NAV_LINKS, buildWhatsAppUrl } from "../config/site";
 import { useLocale } from "../context/LocaleContext";
 
 export default function Navbar() {
-  const { t } = useLocale();
+  const { t, isRtl } = useLocale();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const whatsappUrl = buildWhatsAppUrl(t.site.whatsappMessage);
+  const menuSlide = isRtl ? 12 : -12;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -34,16 +37,17 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 md:px-8">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-3 sm:px-5 sm:py-4 md:px-8">
         <a
           href="#home"
           aria-label={t.a11y.home}
-          className="transition-opacity hover:opacity-90"
+          className="shrink-0 transition-opacity hover:opacity-90"
         >
-          <Logo className="h-9 w-auto md:h-10" />
+          <Logo variant="icon" className="h-8 w-8 sm:hidden" />
+          <Logo className="hidden h-9 w-auto sm:inline-flex md:h-10" />
         </a>
 
-        <ul className="hidden items-center gap-8 md:flex">
+        <ul className="hidden items-center gap-6 lg:flex xl:gap-8">
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
               <a
@@ -56,13 +60,16 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="flex items-center gap-3">
+        <div className="flex shrink-0 items-center gap-2 sm:gap-3">
           <SettingsDropdown className="hidden md:block" />
 
           <a
-            href="#contact"
-            className="hidden rounded-xl bg-gradient-to-r from-electric to-purple px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-electric/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-electric/40 md:inline-flex"
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden items-center gap-2 rounded-xl bg-gradient-to-r from-electric to-purple px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-electric/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-electric/40 md:inline-flex lg:px-5"
           >
+            <FaWhatsapp className="text-base" />
             {t.nav.getInTouch}
           </a>
 
@@ -88,18 +95,18 @@ export default function Navbar() {
             transition={{ duration: 0.25 }}
             className="overflow-hidden border-b border-border bg-navy/95 backdrop-blur-md md:hidden"
           >
-            <ul className="flex flex-col gap-1 px-5 py-4">
+            <ul className="flex flex-col gap-1 px-4 py-4 sm:px-5">
               {NAV_LINKS.map((link, i) => (
                 <motion.li
                   key={link.href}
-                  initial={{ opacity: 0, x: -12 }}
+                  initial={{ opacity: 0, x: menuSlide }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.05 }}
                 >
                   <a
                     href={link.href}
                     onClick={handleNavClick}
-                    className="block rounded-lg px-3 py-3 text-base font-medium text-soft-white/85 transition-colors hover:bg-electric/10 hover:text-cyan"
+                    className="block rounded-lg px-3 py-3 text-start text-base font-medium text-soft-white/85 transition-colors hover:bg-electric/10 hover:text-cyan"
                   >
                     {t.nav[link.key]}
                   </a>
@@ -107,10 +114,13 @@ export default function Navbar() {
               ))}
               <li className="pt-2">
                 <a
-                  href="#contact"
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={handleNavClick}
-                  className="block rounded-xl bg-gradient-to-r from-electric to-purple px-4 py-3 text-center text-sm font-semibold text-white"
+                  className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-electric to-purple px-4 py-3 text-center text-sm font-semibold text-white"
                 >
+                  <FaWhatsapp />
                   {t.nav.getInTouch}
                 </a>
               </li>

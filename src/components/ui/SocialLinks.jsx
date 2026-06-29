@@ -1,9 +1,11 @@
-import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaGlobe, FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 const ICONS = {
   github: FaGithub,
   linkedin: FaLinkedin,
+  instagram: FaInstagram,
   twitter: FaXTwitter,
+  website: FaGlobe,
 };
 
 export default function SocialLinks({ social = {}, className = "" }) {
