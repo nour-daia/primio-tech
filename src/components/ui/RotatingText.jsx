@@ -18,31 +18,20 @@ export default function RotatingText({
     return () => clearInterval(timer);
   }, [items.length, interval]);
 
-  const longestLabel = items.reduce(
-    (longest, item) => (item.length > longest.length ? item : longest),
-    "",
-  );
-
   return (
     <span
-      className="relative inline-grid overflow-hidden align-bottom pb-2 pt-1 leading-[1.35]"
+      className="relative block min-h-[3.2em] w-full max-w-full overflow-hidden sm:min-h-[2.6em]"
       aria-live="polite"
       aria-atomic="true"
     >
-      <span
-        className={`invisible col-start-1 row-start-1 whitespace-nowrap ${className}`}
-      >
-        {longestLabel}
-      </span>
-
       <AnimatePresence mode="wait">
         <motion.span
           key={items[index]}
-          initial={{ y: "75%", opacity: 0 }}
-          animate={{ y: "0%", opacity: 1 }}
-          exit={{ y: "-75%", opacity: 0 }}
-          transition={{ duration: 0.45, ease: "easeInOut" }}
-          className={`col-start-1 row-start-1 block whitespace-nowrap gradient-text ${className}`}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          transition={{ duration: 0.4, ease: "easeInOut" }}
+          className={`absolute inset-x-0 top-0 block w-full max-w-full text-pretty break-words gradient-text ${className}`}
         >
           {items[index]}
         </motion.span>

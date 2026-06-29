@@ -7,23 +7,28 @@ export default function Team() {
   const { t } = useLocale();
 
   return (
-    <section id="team" className="relative bg-blue-black/40 py-20 md:py-28">
+    <section id="team" className="relative overflow-x-hidden bg-blue-black/40 py-16 md:py-28">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-purple/40 to-transparent" />
 
-      <div className="mx-auto max-w-6xl px-5 md:px-8">
+      <div className="section-container">
         <SectionTitle title={t.team.title} description={t.team.description} />
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {team.map((member, index) => (
-            <TeamCard
-              key={member.id}
-              member={member}
-              index={index}
-              name={t.team.members[member.id].name}
-              role={t.team.members[member.id].role}
-              bio={t.team.members[member.id].bio}
-            />
-          ))}
+          {team.map((member, index) => {
+            const content = t.team.members[member.id];
+            if (!content) return null;
+
+            return (
+              <TeamCard
+                key={member.id}
+                member={member}
+                index={index}
+                name={content.name}
+                role={content.role}
+                bio={content.bio}
+              />
+            );
+          })}
         </div>
       </div>
     </section>

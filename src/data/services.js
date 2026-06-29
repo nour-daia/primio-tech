@@ -4,6 +4,7 @@ import {
   FiAward,
   FiTrendingUp,
   FiCheckCircle,
+  FiGitMerge,
   FiBookOpen,
 } from "react-icons/fi";
 
@@ -13,5 +14,6 @@ export const services = [
   { id: "branding", icon: FiAward },
   { id: "digital-marketing", icon: FiTrendingUp },
   { id: "quality-assurance", icon: FiCheckCircle },
+  { id: "n8n", icon: FiGitMerge },
   { id: "training", icon: FiBookOpen },
 ];
