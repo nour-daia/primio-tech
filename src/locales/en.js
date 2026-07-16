@@ -103,34 +103,37 @@ export default {
       },
     },
   },
-  portfolio: {
+portfolio: {
     title: "Featured Projects",
-    description:
-      "A selection of recent work showcasing our design and development capabilities.",
+    description: "A collection of our recent work reflecting our design and development capabilities.",
     items: {
-      ecommerce: {
-        title: "Full-Stack E-Commerce Platform",
-        category: "React.js | Next.js | PHP",
+      dashboard: {
+        title: "Professional Dashboard Design & Development",
+        category: "Vue.js | Vue Router | Tailwind CSS",
       },
-      api: {
-        title: "REST API Integration System",
-        category: "API Integration",
+      website: {
+        title: "Full Website with Admin Panel & Theme Customization",
+        category: "Web Development | Admin Dashboards",
+      },
+      ecommerce: {
+        title: "E-Commerce Platform for Digital Books",
+        category: "E-Commerce Platform | Admin Control Panel",
+      },
+      mobileApp: {
+        title: "E-Commerce Mobile Application",
+        category: "React Native | Order Tracking & Maps",
+      },
+      eduConsulting: {
+        title: "Educational Consulting Platform for Studying Abroad",
+        category: "UI/UX Design & Development",
       },
       wordpress: {
-        title: "Custom WordPress Website",
+        title: "Custom WordPress Website for a Café",
         category: "WordPress Development",
       },
-      automation: {
-        title: "AI Workflow Automation Dashboard",
-        category: "n8n Automation",
-      },
-      portfolio: {
-        title: "Full-Stack Portfolio Platform",
-        category: "React.js | Next.js",
-      },
-      business: {
-        title: "Business Automation System",
-        category: "AI & API Workflows",
+      modeling3d: {
+        title: "3D Modeling & Interior Design Rendering",
+        category: "3D Modeling & Rendering",
       },
     },
   },

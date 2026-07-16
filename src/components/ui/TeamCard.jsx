@@ -14,8 +14,9 @@ function Avatar({ name, image }) {
       <img
         src={image}
         alt={name}
-        className="h-full w-full object-cover"
+        className="h-full w-full object-cover object-[center_18%]"
         loading="lazy"
+        decoding="async"
       />
     );
   }
@@ -27,7 +28,7 @@ function Avatar({ name, image }) {
   );
 }
 
-export default function TeamCard({ member, index, name, role, bio }) {
+export default function TeamCard({ member, index, name, role, bio ,image}) {
   return (
     <motion.article
       initial={{ opacity: 0, y: 32 }}
@@ -39,8 +40,8 @@ export default function TeamCard({ member, index, name, role, bio }) {
     >
       <div className="pointer-events-none absolute -end-8 -top-8 h-32 w-32 rounded-full bg-purple/20 opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-100" />
 
-      <div className="relative mx-auto mb-5 h-28 w-28 overflow-hidden rounded-2xl border-2 border-electric/30 shadow-lg shadow-electric/20 ring-2 ring-purple/20 transition-all duration-300 group-hover:border-cyan/50 group-hover:shadow-cyan/20">
-        <Avatar name={name} image={member.image} />
+      <div className="relative mx-auto mb-5 size-36 shrink-0 overflow-hidden rounded-full border-2 border-electric/30 shadow-lg shadow-electric/20 ring-2 ring-purple/20 transition-all duration-300 group-hover:border-cyan/50 group-hover:shadow-cyan/20">
+        <Avatar name={name} image={image} />
       </div>
 
       <div className="relative text-center">
