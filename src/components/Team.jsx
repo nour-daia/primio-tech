@@ -20,6 +20,7 @@ export default function Team() {
 
             return (
               <TeamCard
+                image={member.image}
                 key={member.id}
                 member={member}
                 index={index}

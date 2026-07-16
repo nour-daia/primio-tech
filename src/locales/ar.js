@@ -103,33 +103,37 @@ export default {
       },
     },
   },
-  portfolio: {
+ portfolio: {
     title: "مشاريع مميزة",
     description: "مجموعة من أعمالنا الأخيرة التي تعكس قدراتنا في التصميم والتطوير.",
     items: {
-      ecommerce: {
-        title: "منصة تجارة إلكترونية متكاملة",
-        category: "React.js | Next.js | PHP",
+      dashboard: {
+        title: "تصميم وبرمجة Dashboard احترافية",
+        category: "Vue.js | Vue Router | Tailwind CSS",
       },
-      api: {
-        title: "نظام تكامل REST API",
-        category: "تكامل واجهات برمجة التطبيقات",
+      website: {
+        title: "موقع متكامل بلوحة تحكم وتخصيص الثيم",
+        category: "تطوير مواقع | لوحات تحكم",
+      },
+      ecommerce: {
+        title: "منصة إلكترونية لعرض وبيع الكتب الرقمية",
+        category: "منصة تجارة إلكترونية | لوحة تحكم للمسؤول",
+      },
+      mobileApp: {
+        title: "تطبيق تجارة إلكترونية للهواتف الذكية",
+        category: "React Native | تتبع الطلبات والخرائط",
+      },
+      eduConsulting: {
+        title: "منصة استشارات تعليمية للدراسة بالخارج",
+        category: "تصميم وتطوير واجهات",
       },
       wordpress: {
-        title: "موقع ووردبريس مخصص",
+        title: "موقع ووردبريس مخصص لمقهى",
         category: "تطوير ووردبريس",
       },
-      automation: {
-        title: "لوحة أتمتة سير العمل بالذكاء الاصطناعي",
-        category: "أتمتة n8n",
-      },
-      portfolio: {
-        title: "منصة معرض أعمال متكاملة",
-        category: "React.js | Next.js",
-      },
-      business: {
-        title: "نظام أتمتة الأعمال",
-        category: "الذكاء الاصطناعي وسير عمل API",
+      modeling3d: {
+        title: "نمذجة ثلاثية الأبعاد وعرض تصاميم داخلية",
+        category: "3D Modeling & Rendering",
       },
     },
   },

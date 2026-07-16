@@ -30,7 +30,7 @@ export default function About() {
             transition={{ duration: 0.5 }}
             className="relative min-w-0"
           >
-            <div className="absolute -inset-2 rounded-3xl bg-gradient-to-br from-electric/20 to-purple/20 blur-xl sm:-inset-3" />
+            <div className="absolute -inset-2 rounded-3xl  blur-xl sm:-inset-3" />
             <AnimatePresence mode="wait">
               <motion.img
                 key={locale}
@@ -40,7 +40,7 @@ export default function About() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.35 }}
-                className="relative w-full max-w-full rounded-2xl border border-border object-cover shadow-xl"
+                className="relative w-full max-w-full  object-cover "
                 loading="lazy"
               />
             </AnimatePresence>
