@@ -6,6 +6,7 @@ import {
   FiCheckCircle,
   FiGitMerge,
   FiBookOpen,
+  FiBox,
 } from "react-icons/fi";
 
 export const services = [
@@ -16,4 +17,5 @@ export const services = [
   { id: "quality-assurance", icon: FiCheckCircle },
   { id: "n8n", icon: FiGitMerge },
   { id: "training", icon: FiBookOpen },
+  { id: "3d-design", icon: FiBox },
 ];

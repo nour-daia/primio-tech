@@ -79,22 +79,26 @@ export default function About() {
               <p className="mb-3 text-sm font-medium text-soft-white/60">
                 {t.about.followUs}
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-3">
                 {Object.entries(SITE.social).map(([platform, url]) => {
                   const Icon = SOCIAL_ICONS[platform];
                   if (!Icon) return null;
 
                   return (
-                    <a
+                    <motion.a
                       key={platform}
                       href={url}
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={platform}
-                      className="flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-blue-black/60 text-soft-white/70 transition-all duration-300 hover:border-cyan/50 hover:bg-electric/20 hover:text-cyan"
+                      whileHover={{ y: -3 }}
+                      className="group flex items-center gap-2 rounded-full border border-border bg-gradient-to-b from-slate/60 to-navy/80 px-4 py-2 text-sm font-medium text-soft-white/70 transition-all duration-300 hover:border-electric/40 hover:text-cyan hover:shadow-md hover:shadow-electric/10"
                     >
-                      <Icon className="text-base" />
-                    </a>
+                      <span className="flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-electric/20 to-purple/20 text-cyan transition-transform duration-300 group-hover:scale-110">
+                        <Icon className="text-sm" />
+                      </span>
+                      <span className="capitalize">{platform}</span>
+                    </motion.a>
                   );
                 })}
               </div>
