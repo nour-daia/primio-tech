@@ -101,6 +101,10 @@ export default {
         description:
           "We deliver hands-on training sessions and workshops to upskill teams in web development, design, and digital tools.",
       },
+      "3d-design": {
+  title: "3D Design",
+  description: "We create professional 3D models for products, logos, and marketing scenes with high-quality detail.",
+},
     },
   },
 portfolio: {
@@ -193,33 +197,33 @@ portfolio: {
     send: "Send Message",
     whatsappCta: "Chat on WhatsApp",
   },
-  news: {
-    title: "Latest News",
-    description:
-      "Stay updated with our latest workshops, launches, and team activities.",
-    readMore: "Read More",
-    items: {
-      "workshop-2026": {
-        title: "Web Development Workshop 2026",
-        excerpt:
-          "A hands-on training session covering modern React, responsive design, and best practices for building production-ready apps.",
-        date: "Mar 15, 2026",
-        location: "Ramallah",
-      },
-      "new-brand": {
-        title: "Primio Tech Brand Refresh",
-        excerpt:
-          "We unveiled our updated visual identity — a cleaner look that reflects our growth in design, development, and digital marketing.",
-        date: "Feb 2, 2026",
-        location: "Online",
-      },
-      "web-summit": {
-        title: "Team at the Regional Web Summit",
-        excerpt:
-          "Our team joined industry leaders to share insights on UI/UX, quality assurance, and building scalable digital products.",
-        date: "Jan 20, 2026",
-        location: "Amman",
-      },
+news: {
+  title: "Latest News",
+  description:
+    "Stay updated with our latest workshops, launches, and team activities.",
+  readMore: "Read More",
+  items: {
+    "team-meeting-2026": {
+      title: "Primio Team Meets to Discuss Latest Developments",
+      excerpt:
+        "Our team came together to discuss recent developments and explore new working methods to enhance the quality of services we deliver to our clients.",
+      date: "Mar 2026",
+      location: "Ramallah",
+    },
+    "ai-workshop-announcement": {
+      title: "Upcoming Workshop on Learning Mechanisms in the AI Era",
+      excerpt:
+        "Next week we'll be officially announcing a dedicated workshop on learning mechanisms in the age of artificial intelligence. Stay tuned for the details.",
+      date: "Apr 2026",
+      location: "Online",
+    },
+    "new-partnerships": {
+      title: "Building New Partnerships",
+      excerpt:
+        "We're actively working on onboarding new partners from institutions, government departments, and companies to expand our collaboration network and deliver greater value to our clients.",
+      date: "Apr 2026",
+      location: "Palestine",
     },
   },
+},
 };
