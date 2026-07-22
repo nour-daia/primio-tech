@@ -153,9 +153,9 @@ portfolio: {
   },
 
   "mohammed-abu-awda": {
-    name: "Mohammed Abu Awda",
-    role: "Quality Assurance & LinkedIn Management",
-    bio: "Ensures software quality through testing and validation processes, and manages LinkedIn presence and professional outreach.",
+    name: "Mohammed Abu Oadeh",
+    role: "Cybersecurity Engineer & Networking",
+    bio: "Specializes in cybersecurity, networking, and web technologies, focusing on securing networks and web applications, vulnerability assessment, and implementing security best practices."
   },
 
   "mohammed-abu-zour": {

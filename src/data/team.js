@@ -1,5 +1,5 @@
 import abbull from "../assets/abdulrahman.jpeg";
-import nour from "../assets/awda.jpeg";
+import nour from "../assets/nour.jpeg";
 import mohammed from "../assets/awda.jpeg";
 import khaled from "../assets/khaled.jpeg";
 import safaa from "../assets/safaa.jpeg";
@@ -47,7 +47,7 @@ export const team = [
     },
   },
   {
-    id: "nour sead",
+    id: "nour-aboudia",
     image: nour,
     social: {
       github: "https://github.com/nour-daia",
