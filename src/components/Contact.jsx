@@ -69,7 +69,7 @@ export default function Contact() {
               <span className="min-w-0">
                 <span className="block text-sm text-soft-white/55">{t.contact.whatsappLabel}</span>
                 <span className="mt-1 block text-sm font-semibold text-soft-white sm:text-base">
-                  +972 59 201 8231
+                  +970 592 018 231
                 </span>
               </span>
             </a>
