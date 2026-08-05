@@ -8,7 +8,7 @@ export const SITE = {
   name: "Primio Tech",
   email: "primio@outlook.sa",
   whatsapp: {
-    number: "972592018231",
+    number: "970592018231",
   },
   social: {
     instagram: "https://instagram.com/primio.tech",

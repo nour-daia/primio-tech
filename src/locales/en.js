@@ -145,42 +145,38 @@ portfolio: {
     title: "Meet Our Team",
     description:
       "Talented people behind every project — passionate experts ready to bring your ideas to life.",
-   members: {
-  abdulrahman: {
-    name: "Abdulrahman Al-Shawa",
-    role: "Team Leader & Data Analyst",
-    bio: "Leads the team and analyzes data to support decision-making and improve system performance through insights and reporting.",
-  },
-
-  "mohammed-abu-awda": {
-    name: "Mohammed Abu Oadeh",
-    role: "Cybersecurity Engineer & Networking",
-    bio: "Specializes in cybersecurity, networking, and web technologies, focusing on securing networks and web applications, vulnerability assessment, and implementing security best practices."
-  },
-
-  "mohammed-abu-zour": {
-    name: "Mohammed Abu Zour",
-    role: "Backend Developer & Technical Lead",
-    bio: "Develops and maintains backend systems, builds APIs, and leads technical implementation to ensure scalable and efficient architecture.",
-  },
-
-  "nour-aboudia": {
-  name: "Nour Aboudia",
-  role: "Frontend Developer & Automation Specialist & WordPress Developer & SEO",
-  bio: "Develops modern frontend interfaces, builds and customizes WordPress websites, improves SEO performance, and automates workflows using n8n to deliver fast and efficient digital solutions.",
-},
-  khaled: {
-    name: "Khaled Abu Aasi",
-    role: "Backend Developer",
-    bio: "Develops backend systems and builds databases and APIs to ensure robust and stable application performance.",
-  },
-
-  safaa: {
-    name: "Safaa Saad",
-    role: "UI/UX Designer & Branding Specialist",
-    bio: "Designs user interfaces and experiences with a strong focus on branding, visual identity, and user-centered design.",
-  },
-},
+    members: {
+      "mohammed-abu-zour": {
+        name: "Mohammed Abu Zour",
+        role: "Team Leader (Founder)",
+        bio: "Manages projects and partners, leads technical execution, and develops backend systems and APIs.",
+      },
+      abdulrahman: {
+        name: "Abdulrahman Al-Shawa",
+        role: "Operations Lead (Founder)",
+        bio: "Manages operations, web development, events, performance tracking, and social media platforms.",
+      },
+      "nour-aboudia": {
+        name: "Nour Aboudia",
+        role: "Frontend Developer (Founder)",
+        bio: "Develops frontend interfaces, automates workflows, builds WordPress sites, and improves SEO.",
+      },
+      khaled: {
+        name: "Khaled Abu Aasi",
+        role: "Backend Developer (Founder)",
+        bio: "Builds backend systems, databases, and secure software architecture.",
+      },
+      "mohammed-abu-awda": {
+        name: "Mohammed Abu Oadeh",
+        role: "Cybersecurity Engineer",
+        bio: "Audits systems, discovers security vulnerabilities, analyzes risks, and secures infrastructure.",
+      },
+      safaa: {
+        name: "Safaa Saad",
+        role: "UI/UX Designer (Founder)",
+        bio: "Designs user experiences and digital interfaces, turning ideas into clear visual systems.",
+      },
+    },
   },
   contact: {
     title: "Let's Work Together",
@@ -208,14 +204,14 @@ news: {
       excerpt:
         "Our team came together to discuss recent developments and explore new working methods to enhance the quality of services we deliver to our clients.",
       date: "Mar 2026",
-      location: "Ramallah",
+      location: "Gaza",
     },
     "ai-workshop-announcement": {
       title: "Upcoming Workshop on Learning Mechanisms in the AI Era",
       excerpt:
         "Next week we'll be officially announcing a dedicated workshop on learning mechanisms in the age of artificial intelligence. Stay tuned for the details.",
       date: "Apr 2026",
-      location: "Online",
+      location: "Gaza Strip",
     },
     "new-partnerships": {
       title: "Building New Partnerships",

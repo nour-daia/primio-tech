@@ -43,8 +43,12 @@ export default function Navbar() {
           aria-label={t.a11y.home}
           className="shrink-0 transition-opacity hover:opacity-90"
         >
-          <Logo variant="icon" className="h-8 w-8 sm:hidden" />
-          <Logo className="hidden h-9 w-auto sm:inline-flex md:h-10" />
+          <span className="sm:hidden">
+            <Logo variant="icon" className="h-8 w-8" />
+          </span>
+          <span className="hidden sm:inline-flex">
+            <Logo className="h-9 w-auto md:h-10" />
+          </span>
         </a>
 
         <ul className="hidden items-center gap-6 lg:flex xl:gap-8">
