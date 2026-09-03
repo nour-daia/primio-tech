@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { FiArrowUpRight, FiCalendar, FiMapPin } from "react-icons/fi";
+import { FiCalendar, FiMapPin } from "react-icons/fi";
+import { FaInstagram } from "react-icons/fa6";
 import Button from "./Button";
 import { useLocale } from "../../context/LocaleContext";
 
@@ -52,7 +53,7 @@ export default function NewsCard({ item, content, index }) {
               external={item.link.startsWith("http")}
             >
               {t.news.readMore}
-              <FiArrowUpRight />
+              <FaInstagram />
             </Button>
           </div>
         )}

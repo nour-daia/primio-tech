@@ -17,9 +17,9 @@ export default function Hero() {
   );
 
   const stats = [
-    { value: "150+", label: t.hero.stats.projects },
-    { value: "1500+", label: t.hero.stats.customers },
-    { value: "2700+", label: t.hero.stats.feedbacks },
+    { value: "17+", label: t.hero.stats.projects },
+    { value: "110+", label: t.hero.stats.customers },
+    { value: "1500+", label: t.hero.stats.feedbacks },
   ];
 
   const whatsappUrl = buildWhatsAppUrl(t.site.whatsappMessage);

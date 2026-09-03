@@ -147,22 +147,22 @@ export default {
     members: {
       "mohammed-abu-zour": {
         name: "محمد أبو زور",
-        role: "Team Leader (Founder)",
+        role: "Team Leader",
         bio: "إدارة المشاريع والشركاء، قيادة التنفيذ التقني، تطوير أنظمة الـ Backend وبناء واجهات API.",
       },
       abdulrahman: {
         name: "عبد الرحمن الشوا",
-        role: "Operations Lead (Founder)",
+        role: "Operations Lead",
         bio: "إدارة العمليات التشغيلية، تطوير الويب، وتنظيم الفعاليات ومتابعة الأداء وإدارة منصات التواصل الاجتماعي.",
       },
       "nour-aboudia": {
         name: "نور أبو دية",
-        role: "Frontend Developer (Founder)",
+        role: "Frontend Developer",
         bio: "تطوير الواجهات الأمامية، أتمتة العمليات، تطوير مواقع WordPress وتحسين محركات البحث (SEO).",
       },
       khaled: {
         name: "خالد أبو عاصي",
-        role: "Backend Developer (Founder)",
+        role: "Backend Developer",
         bio: "بناء الأنظمة الخلفية، قواعد البيانات، ومعمارية البرمجيات الآمنة.",
       },
       "mohammed-abu-awda": {
@@ -172,7 +172,7 @@ export default {
       },
       safaa: {
         name: "صفاء سعد",
-        role: "UI/UX Designer (Founder)",
+        role: "UI/UX Designer",
         bio: "تصميم تجربة المستخدم ودراسة الواجهات الرقمية وتحويل الفكرة لنسق بصرية.",
       },
     },
@@ -195,7 +195,7 @@ news: {
   title: "آخر الأخبار",
   description:
     "تابعوا آخر الفعاليات، الورشات، ونشاطات فريق بريميم.",
-  readMore: "اقرأ المزيد",
+  readMore: "شاهد على إنستغرام",
   items: {
     "team-meeting-2026": {
       title: "اجتماع فريق بريميم لمناقشة التطورات الجديدة",
