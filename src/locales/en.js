@@ -148,22 +148,22 @@ portfolio: {
     members: {
       "mohammed-abu-zour": {
         name: "Mohammed Abu Zour",
-        role: "Team Leader (Founder)",
+        role: "Team Leader",
         bio: "Manages projects and partners, leads technical execution, and develops backend systems and APIs.",
       },
       abdulrahman: {
         name: "Abdulrahman Al-Shawa",
-        role: "Operations Lead (Founder)",
+        role: "Operations Lead",
         bio: "Manages operations, web development, events, performance tracking, and social media platforms.",
       },
       "nour-aboudia": {
         name: "Nour Aboudia",
-        role: "Frontend Developer (Founder)",
+        role: "Frontend Developer",
         bio: "Develops frontend interfaces, automates workflows, builds WordPress sites, and improves SEO.",
       },
       khaled: {
         name: "Khaled Abu Aasi",
-        role: "Backend Developer (Founder)",
+        role: "Backend Developer",
         bio: "Builds backend systems, databases, and secure software architecture.",
       },
       "mohammed-abu-awda": {
@@ -173,7 +173,7 @@ portfolio: {
       },
       safaa: {
         name: "Safaa Saad",
-        role: "UI/UX Designer (Founder)",
+        role: "UI/UX Designer",
         bio: "Designs user experiences and digital interfaces, turning ideas into clear visual systems.",
       },
     },
@@ -197,7 +197,7 @@ news: {
   title: "Latest News",
   description:
     "Stay updated with our latest workshops, launches, and team activities.",
-  readMore: "Read More",
+  readMore: "View on Instagram",
   items: {
     "team-meeting-2026": {
       title: "Primio Team Meets to Discuss Latest Developments",

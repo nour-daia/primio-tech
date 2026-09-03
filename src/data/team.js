@@ -13,6 +13,7 @@ export const team = [
       github: "https://github.com/m-abuzour",
       linkedin:
         "https://www.linkedin.com/in/mohammed-abuzour?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+      website: "https://mohammed-abuzour.netlify.app/",
     },
   },
   {

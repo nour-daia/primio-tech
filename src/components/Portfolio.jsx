@@ -32,12 +32,20 @@ export default function Portfolio() {
                 whileHover={{ y: -6 }}
                 className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-slate/30 transition-colors duration-300 hover:border-electric/30"
               >
-                {/* الصورة - بدون أي كتابة فوقها */}
-                <div className="relative aspect-[4/3] overflow-hidden">
+                {/* الصورة - كاملة بدون قص، وبدون أي كتابة فوقها */}
+                <div className="relative aspect-[16/10] overflow-hidden bg-navy/60">
+                  {/* خلفية مضبّبة تملأ الفراغ حول الصورة */}
+                  <img
+                    src={project.image}
+                    alt=""
+                    aria-hidden="true"
+                    className="absolute inset-0 h-full w-full scale-110 object-cover opacity-30 blur-2xl"
+                    loading="lazy"
+                  />
                   <img
                     src={project.image}
                     alt={content.title}
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="relative h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
                   {/* أوفرلاي خفيف بس للهوفر، من غير نص */}
