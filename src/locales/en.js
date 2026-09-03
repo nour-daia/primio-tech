@@ -206,11 +206,11 @@ news: {
       date: "Mar 2026",
       location: "Gaza",
     },
-    "ai-workshop-announcement": {
-      title: "Upcoming Workshop on Learning Mechanisms in the AI Era",
+    "programming-intro-workshop": {
+      title: "Intro to Programming: How to Choose Your Path",
       excerpt:
-        "Next week we'll be officially announcing a dedicated workshop on learning mechanisms in the age of artificial intelligence. Stay tuned for the details.",
-      date: "Apr 2026",
+        "Primio Tech hosted an introductory workshop on the world of programming, covering the different technical tracks and how to pick the one that fits you, along with the stages of building your first real project, wrapping up with an open discussion with attendees.",
+      date: "Jul 2026",
       location: "Gaza Strip",
     },
     "new-partnerships": {
